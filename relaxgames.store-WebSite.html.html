@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - Play Free Online Survival Game | RelaxGames.store</title>
+    <meta name="description" content="Play Monster Survivors online for free! An exciting survival game where you battle monsters and survive in challenging environments. No download required.">
+    <meta name="keywords" content="Monster Survivors, survival game, online game, free game, action game, monster battle">
+    <meta name="author" content="RelaxGames.store">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://relaxgames.store/monster-survivors">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Monster Survivors - Play Free Online Survival Game">
+    <meta property="og:description" content="Play Monster Survivors online for free! An exciting survival game where you battle monsters and survive in challenging environments.">
+    <meta property="og:url" content="https://relaxgames.store/monster-survivors">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RelaxGames.store">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster Survivors - Play Free Online Survival Game">
+    <meta name="twitter:description" content="Play Monster Survivors online for free! An exciting survival game where you battle monsters and survive in challenging environments.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#007AFF',
+                        'apple-gray': '#F2F2F7',
+                        'apple-dark': '#1C1C1E',
+                        'apple-light': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .game-container {
+            aspect-ratio: 16/9;
+            max-height: 70vh;
+        }
+        
+        @media (max-width: 768px) {
+            .game-container {
+                aspect-ratio: 4/3;
+                max-height: 60vh;
+            }
+        }
+        
+        .apple-shadow {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #007AFF;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-apple-gray font-sans">
+    <!-- Header -->
+    <header class="bg-apple-light apple-shadow sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-apple-blue">RelaxGames.store</a>
+                </div>
+                <nav class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="text-gray-700 hover:text-apple-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="/games" class="text-gray-700 hover:text-apple-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">Games</a>
+                        <a href="/about" class="text-gray-700 hover:text-apple-blue px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Game Title and Introduction -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-apple-dark mb-4">Monster Survivors</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Survive the monster apocalypse in this thrilling action-packed survival game where strategy meets intense combat.</p>
+        </div>
+
+        <!-- Game Container -->
+        <div class="bg-apple-light rounded-2xl apple-shadow p-6 mb-8">
+            <div class="game-container w-full mx-auto relative">
+                <div id="loading" class="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-lg">
+                    <div class="text-center">
+                        <div class="loading-spinner mx-auto mb-4"></div>
+                        <p class="text-gray-600">Loading Monster Survivors...</p>
+                    </div>
+                </div>
+                <iframe 
+                    id="gameFrame"
+                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
+                    class="w-full h-full rounded-lg border-0 opacity-0 transition-opacity duration-500"
+                    title="Monster Survivors Game"
+                    allowfullscreen
+                    onload="document.getElementById('loading').style.display='none'; this.style.opacity='1';">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Game Information -->
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <!-- Game Description -->
+            <div class="bg-apple-light rounded-2xl apple-shadow p-6">
+                <h2 class="text-2xl font-bold text-apple-dark mb-4">About Monster Survivors</h2>
+                <p class="text-gray-700 mb-4">
+                    Monster Survivors is an intense survival action game that challenges players to endure waves of terrifying monsters in a post-apocalyptic world. Armed with an arsenal of weapons and survival skills, you must strategically navigate through dangerous territories while collecting resources and upgrading your equipment.
+                </p>
+                <p class="text-gray-700">
+                    The game features dynamic gameplay mechanics, progressive difficulty, and a variety of monster types that will test your survival instincts. Each playthrough offers a unique experience with randomly generated encounters and loot systems.
+                </p>
+            </div>
+
+            <!-- Game Features -->
+            <div class="bg-apple-light rounded-2xl apple-shadow p-6">
+                <h2 class="text-2xl font-bold text-apple-dark mb-4">Game Features</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-apple-blue rounded-full mr-3"></span>
+                        Intense survival action gameplay
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-apple-blue rounded-full mr-3"></span>
+                        Multiple weapon types and upgrades
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-apple-blue rounded-full mr-3"></span>
+                        Dynamic monster encounters
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-apple-blue rounded-full mr-3"></span>
+                        Progressive difficulty system
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-apple-blue rounded-full mr-3"></span>
+                        Resource collection and crafting
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-2 h-2 bg-apple-blue rounded-full mr-3"></span>
+                        No download required - play instantly
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- How to Play -->
+        <div class="bg-apple-light rounded-2xl apple-shadow p-6 mb-8">
+            <h2 class="text-2xl font-bold text-apple-dark mb-4">How to Play Monster Survivors</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-apple-dark mb-2">Basic Controls</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Use WASD or arrow keys to move your character</li>
+                        <li>• Mouse to aim and shoot at monsters</li>
+                        <li>• Space bar for special abilities</li>
+                        <li>• Tab to open inventory and upgrades</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-apple-dark mb-2">Survival Tips</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Collect resources to upgrade your weapons</li>
+                        <li>• Keep moving to avoid monster swarms</li>
+                        <li>• Use the environment to your advantage</li>
+                        <li>• Prioritize high-value targets first</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Stats -->
+        <div class="bg-apple-light rounded-2xl apple-shadow p-6">
+            <h2 class="text-2xl font-bold text-apple-dark mb-4">Game Information</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-4 bg-apple-gray rounded-lg">
+                    <div class="text-2xl font-bold text-apple-blue">Free</div>
+                    <div class="text-sm text-gray-600">To Play</div>
+                </div>
+                <div class="p-4 bg-apple-gray rounded-lg">
+                    <div class="text-2xl font-bold text-apple-blue">Action</div>
+                    <div class="text-sm text-gray-600">Genre</div>
+                </div>
+                <div class="p-4 bg-apple-gray rounded-lg">
+                    <div class="text-2xl font-bold text-apple-blue">Online</div>
+                    <div class="text-sm text-gray-600">Platform</div>
+                </div>
+                <div class="p-4 bg-apple-gray rounded-lg">
+                    <div class="text-2xl font-bold text-apple-blue">Unity</div>
+                    <div class="text-sm text-gray-600">Engine</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-apple-white border-t border-gray-200 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center">
+                <p class="text-gray-600">&copy; 2024 RelaxGames.store. All rights reserved. Play Monster Survivors and other free online games.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="/privacy" class="text-gray-500 hover:text-apple-blue transition-colors">Privacy Policy</a>
+                    <a href="/terms" class="text-gray-500 hover:text-apple-blue transition-colors">Terms of Service</a>
+                    <a href="/contact" class="text-gray-500 hover:text-apple-blue transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Monster Survivors",
+        "description": "Survive the monster apocalypse in this thrilling action-packed survival game where strategy meets intense combat.",
+        "genre": "Action, Survival",
+        "gameplatform": "Web Browser",
+        "publisher": {
+            "@type": "Organization",
+            "name": "RelaxGames.store"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "applicationCategory": "Game"
+    }
+    </script>
+</body>
+</html> 
